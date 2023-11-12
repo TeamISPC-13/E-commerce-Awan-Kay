@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #1B1D31;
+    background-color: rgb(3, 9, 14);
     padding-top: 80px;
 }
 h1{
@@ -32,7 +32,7 @@ header{
 
 }
 .scroll{
-    background-color: #603452;
+    background-color: #ff6961;
     box-shadow: .1rem .2rem .3rem #333;
 }
 .scroll img{
@@ -58,7 +58,7 @@ header{
 }
 .contenedor>div{
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-    background-color: #603452;
+    background-color: #84b6f4;
     border-radius: 20px;
 }
 .contenedor>div:hover{
@@ -98,7 +98,7 @@ header{
     cursor: pointer;
 }
 .informacion button:hover{
-    background-color: #603452;
+    background-color: #ff6961;
 }
 
 .infromacio button:active{
@@ -139,7 +139,7 @@ header{
 .informacionCompra{
     width: 500px;
     height: 500px;
-    background-color: #2D4263;
+    background-color: #84b6f4;
     border-radius: 25px;
     display: flex;
     align-items: flex-start;
@@ -236,7 +236,7 @@ header{
 }
 
 .contenedorCompra > button:hover{
-    background-color: #603452;
+    background-color: #ff6961;
     color: black;
 }
 
@@ -260,4 +260,30 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.inicio .navbar ul li {
+    position: relative;
+    float: left;
+}
+/* letras inicio-empresa-productos contacto */
+.inicio .navbar ul li a {
+    font-size: 18px;
+    padding: 15px;
+    color: #ffffff;
+    display: block;
+    text-shadow: 1px 1px 0 #000000;
+    background-color: #9d9d9d46;
+    padding: 10px; /*espacios*/
+    list-style-type: none;
+    display: inline;
+    margin-right: 3px;
+    text-decoration: none;
+    color: #ffffff;; /*color letras*/
+    border-radius: 10px; /*bordes*/
+}
+
+/*color al poner el cursor*/
+.inicio .navbar ul li a:hover {
+    color: #E53854;
 }
