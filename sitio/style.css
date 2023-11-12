@@ -29,7 +29,7 @@ background-color: #1F1F1F;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 120vh;
     display: flex;
     align-items: center;
 }
@@ -104,8 +104,15 @@ background-color: #1F1F1F;
     text-align: center;
     margin-bottom: 45px;
 }
+
+h1 {
+    margin: 75px;
+    font-size: 250px;
+    color: #FFFFFF;
+    text-shadow: 15px 10px 0 #000000;
+}
 /* color logo awankai */
-.header-txt h1, span, h3 {
+.header-txt span, h3 {
     font-size: 130px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -118,11 +125,12 @@ background-color: #1F1F1F;
 .header-txt span {
     font-size: 35px; /*tamano*/
 }
+
 /* color descripcion awankai*/
 .header-txt p {
     color: #ffffff;
     padding: 0 250px;
-    margin: 25px 0;
+    margin: 20;
     text-shadow: 2px -1px 0 #070707;
     font-size: 24px;
 }
@@ -154,6 +162,7 @@ background-color: #1F1F1F;
 .dir h3 {
     font-size: 25px;
     text-align: center;
+    margin: 20;
 }
 /*letras direccion-telefono-horario*/
 .dir p {
@@ -162,6 +171,7 @@ background-color: #1F1F1F;
     text-shadow: 1px 1px 0 #000000;
     text-transform: uppercase;
     text-align: center;
+    margin: 20;
 
 }
 
