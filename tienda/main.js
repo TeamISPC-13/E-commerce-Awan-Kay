@@ -1,4 +1,6 @@
+
 // Funciones para almacenar y traer los datos que se almacenan
+
 function guardarAlmacenamientoLocal(llave, valor_a_guardar) {
     localStorage.setItem(llave, JSON.stringify(valor_a_guardar))
 }
@@ -9,6 +11,7 @@ function obtenerAlmacenamientoLocal(llave) {
 let productos = obtenerAlmacenamientoLocal('productos') || [];
 
 // Variables que traemos de nuestro html
+
 const informacionCompra = document.getElementById('informacionCompra');
 const contenedorCompra = document.getElementById('contenedorCompra');
 const productosCompra = document.getElementById('productosCompra');
@@ -34,12 +37,13 @@ window.addEventListener("scroll", function () {
     }
 })
 
-
+//Se añade un evento de carga (load) que ejecuta la función visualizarProductos y agrega una clase none al elemento con id contenedorCompra.
 window.addEventListener('load', () => {
     visualizarProductos();
     contenedorCompra.classList.add("none")
 })
 
+//Itera sobre el array productos y muestra la información de los productos en el elemento con id contenedor.
 function visualizarProductos() {
     contenedor.innerHTML = ""
     for (let i = 0; i < productos.length; i++) {
@@ -90,7 +94,7 @@ function mostrarElemtrosLista() {
     }
     total.innerHTML = `<p>Valor Total</p> <p><span>$${valortotal}</span></p>`
 }
-
+//Elimina un elemento de la lista lista , Actualiza la cantidad de productos en la variable productos y Vuelve a visualizar los productos y actualiza el carrito.
 function eliminar(indice){
     let van = true
     let i = 0
@@ -111,7 +115,7 @@ function eliminar(indice){
     visualizarProductos()
     mostrarElemtrosLista()
 }
-
+//Añade un evento de clic al elemento con id x que oculta el carrito y restaura el comportamiento normal del cuerpo (body).
 x.addEventListener("click", function(){
     body.style.overflow = "auto"
     contenedorCompra.classList.add('none')
