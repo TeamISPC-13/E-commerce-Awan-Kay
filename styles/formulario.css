@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(3, 9, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #24253C;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 420px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form h2 {
+    font-size: 30px;
+    color: #ff6961;
+    margin-bottom: 35px;
+}
+
+input {
+    padding: 17px;
+    background-color: transparent;
+    border: 2px solid #ff6961;
+    margin-bottom: 30px;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #89879B
+}
+
+.btn {
+    background-color: #E53854;
+    border: 2px solid #E53854;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff6961;
+    border: 2px solid #ff6961;
+}
+
+@media (max-width:991px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        width: 340px;
+    }
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+/* logo */
+.logo {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #00000021;
+    padding: 10px; /*espacios*/
+    list-style-type: none;
+    display: inline;
+    margin-right: 3px;
+    text-decoration: none;
+    color: #ffffff;; /*color letras*/
+    border-radius: 10px; /*bordes*/
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+/* letras inicio-empresa-productos contacto */
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 15px;
+    color: #ffffff;
+    display: block;
+    text-shadow: 1px 1px 0 #000000;
+    background-color: rgba(51, 51, 51, 0.6);
+    padding: 10px; /*espacios*/
+    list-style-type: none;
+    display: inline;
+    margin-right: 3px;
+    text-decoration: none;
+    color: #ffffff;; /*color letras*/
+    border-radius: 10px; /*bordes*/
+}
+
+/*color al poner el cursor*/
+.menu .navbar ul li a:hover {
+    color: #E53854;
+}
+
+#menu {
+    display: none;
+}

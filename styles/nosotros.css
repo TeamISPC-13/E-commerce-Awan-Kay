@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&display=swap');
+
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+background-color: rgb(3, 9, 14)
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+/* logo */
+.logo {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #00000021;
+    padding: 10px; /*espacios*/
+    list-style-type: none;
+    display: inline;
+    margin-right: 3px;
+    text-decoration: none;
+    color: #ffffff;; /*color letras*/
+    border-radius: 10px; /*bordes*/
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+/* letras inicio-empresa-productos contacto */
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 15px;
+    color: #ffffff;
+    display: block;
+    text-shadow: 1px 1px 0 #000000;
+    background-color: #00000021;
+    padding: 10px; /*espacios*/
+    list-style-type: none;
+    display: inline;
+    margin-right: 3px;
+    text-decoration: none;
+    color: #ffffff;; /*color letras*/
+    border-radius: 10px; /*bordes*/
+}
+
+/*color al poner el cursor*/
+.menu .navbar ul li a:hover {
+    color: #E53854;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+h1{
+    font-size: 250px;
+    color: #FFFFFF;
+    margin: 50px;
+}
+
+/* color logo awankai */
+.header-txt span, h3 {
+    font-size: 80px; /*tamano letra*/
+    letter-spacing: 15px; /*espacio letras*/
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 #070707;
+}
+/*logo quienes somos*/
+.header-txt span {
+    font-size: 50px; /*tamano*/
+}
+/* color descripcion awankai*/
+.header-txt p {
+    color: #ffffff;
+    padding: 0 20px;
+    margin: 25px 0;
+    text-shadow: 2px -1px 0 #070707;
+    font-size: 20px; /*tamano letra*/
+}
+
+.header-dir {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dir h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 45px;
+    letter-spacing: 15px;
+    line-height: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #AFAFAF;
+    margin: 25px 0;
+}
+
+footer{
+    text-align: center
+}
